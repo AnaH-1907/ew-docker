@@ -14,9 +14,9 @@ process.on("SIGTERM", () => {
 (async () => {
     const app = express();
 
-    console.log('connecting to DB');
+    console.log('connecting to MongoDB');
     await mongoose.connect('mongodb://mongodb:27017/ew-docker');
-    console.log('connected to DB');
+    console.log('connected to MongoDB');
 
     app.get('/', (req, res) => {
         console.log("Got a request");
