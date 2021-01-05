@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    # links:
+    #   - mongodb
+    ports:
+      - 4000:3000
+  mongodb:
+    image: mongo
